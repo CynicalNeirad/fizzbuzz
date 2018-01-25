@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.print.DocFlavor;
 import java.util.Scanner;
 @RestController
@@ -27,8 +26,6 @@ public class MainController {
                 outputString = outputString + n;
             }
         }
-        return (outputString + " And there are " + multiplesCount + " multiples of 7, 17, and 23.");
-
-
+        return (outputString + "And there are " + multiplesCount + " multiples of 7, 17, and 23.");
     }
 }
