@@ -16,11 +16,10 @@ public class Ball8 {
             System.out.println("What is it, that you wish to ask of this magic orb?");
             String question = ballQuestion.nextLine();
             int responseN = responseGet.nextInt(20);
-
-            //Get response from list somehow
-
+            String[] stringArray = {"It is certain","It is decidedly so","Without a doubt","Yes definitely","You may rely on it","As I see it, yes","Most likely","Outlook good","Yes","Signs point to yes","Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now","Concentrate and ask again","Don't count on it","My reply is no","My sources say no","Outlook not so good","Very doubtful"};
+            String response = stringArray[responseN];
             System.out.println("Your question was: " + question);
-            System.out.println("This is a placeholder for randomized responses");
+            System.out.println(response);
 
             System.out.println("Now that you've seen my magic, do you have another question? (Y/N)");
             String YesNo = ballQuestion.nextLine();
@@ -33,36 +32,3 @@ public class Ball8 {
         return null;
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*"It is certain"
-"It is decidedly so"
-"Without a doubt"
-"Yes definitely"
-"You may rely on it"
-"As I see it, yes"
-"Most likely"
-"Outlook good"
-"Yes"
-"Signs point to yes"
-"Reply hazy try again"
-"Ask again later"
-"Better not tell you now"
-"Cannot predict now"
-"Concentrate and ask again"
-"Don't count on it"
-"My reply is no"
-"My sources say no"
-"Outlook not so good"
-"Very doubtful"} */
