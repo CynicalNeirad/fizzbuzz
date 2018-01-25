@@ -7,11 +7,11 @@ import java.util.Random;
 @RestController
 
 public class Ball8 {
-    @RequestMapping("/")
-    public String showIndex() {
+    @RequestMapping("8ball")
+    public String ball8() {
         boolean repeat = true;
         Scanner ballQuestion = new Scanner(System.in);
-        Random responseGet = new Random(System.in);
+        Random responseGet = new Random();
         do {
             System.out.println("What is it, that you wish to ask of this magic orb?");
             String question = ballQuestion.nextLine();
